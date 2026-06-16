@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
         ], [
             'name' => env('ADMIN_NAME', 'saleh9090'),
             'password' => $password,
-            'level' => User::LEVEL_SUPER_ADMIN,
+            'role' => User::ROLE_SUPER_ADMIN,
             'email_verified_at' => now(),
         ]);
     }
