@@ -25,7 +25,6 @@ class UserForm
                         ->all())
                     ->default(Access::defaultCompanyId())
                     ->searchable()
-                    ->required()
                     ->hidden(! Access::isSuperAdmin()),
                 Select::make('branch_id')
                     ->options(fn (): array => Branch::query()
